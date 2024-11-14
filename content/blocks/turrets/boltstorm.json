@@ -1,0 +1,114 @@
+{
+    "type": "itemTurret",
+    "health": 1250,
+    "reload": 5,
+    "ammoUseEffect": "casing3",
+    "range": 250,
+    "inaccuracy": 2,
+    "recoil": 1,
+    "shoot": {
+      "type": "ShootAlternate",
+      "barrels": 2,
+      "spread": 4,
+      "shots": 1
+    },
+    "shootShake": 1,
+    "size": 2,
+    "shootCone": 0.08,
+    "shootSound": "shootBig",
+    "ammoTypes": {
+        "scrap": {
+          "type": "BasicBulletType",
+          "speed": 5,
+          "lifetime": 50,
+          "damage": 16,
+          "status": "slow",
+          "statusDuration": 100,
+          "shootEffect": "shootBig",
+          "knockback": 1,
+          "height": 13,
+          "width": 10,
+          "ammoMultiplier": 4,
+          "frontColor": "B2C6D2FF",
+          "backColor": "75788EFF",
+          "despawnEffect": "explosion",
+          "hitEffect": "explosion",
+          "pierce": false,
+          "smokeEffect": "none"
+      },
+        "metaglass": {
+          "type": "BasicBulletType",
+          "inaccuracy": 2,
+          "speed": 5,
+          "damage": 12,
+          "splashDamage": 45,
+          "splashDamageRadius": 20,
+          "knockback": 0.8,
+          "lifetime": 50,
+          "height": 13,
+          "width": 10,
+          "ammoMultiplier": 2,
+          "frontColor": "EBEEF5FF",
+          "backColor": "D0D0E0FF",
+          "shootEffect": "shootBig",
+          "hitEffect": "flakExplosion",
+          "despawnEffect": "flakExplosion",
+          "pierce": false,
+          "smokeEffect": "none",
+          "fragBullets": 6,
+          "fragBullet": {
+              "type": "FlakBulletType",
+              "damage": 6,
+              "speed": 2,
+              "lifetime": 10
+                }
+        },
+          "thorium": {
+            "type": "BasicBulletType",
+            "speed": 5,
+            "damage": 30,
+            "lifetime": 60,
+            "height": 13,
+            "width": 10,
+            "knockback": 2.4,
+            "frontColor": "F9A3C7FF",
+            "backColor": "CB8EBFFF",
+            "shootEffect": "shootBig",
+            "despawnEffect": "explosion",
+            "hitEffect": "explosion",
+            "pierceCap": 3,
+            "pierce": true,
+            "smokeEffect": "none"
+          },
+            "surge-alloy": {
+              "type": "BasicBulletType",
+              "speed": 5,
+              "damage": 64,
+              "knockback": 0.8,
+              "lifetime": 60,
+              "height": 13,
+              "width": 10,
+              "lightning": 3,
+              "lightningLength": 10,
+              "lightningDamage": 35,
+              "frontColor": "F3E979FF",
+              "backColor": "ECD36FFF",
+              "shootEffect": "shootBig",
+              "hitEffect": "flakExplosion",
+              "despawnEffect": "flakExplosion",
+              "pierce": false,
+              "smokeEffect": "none"
+            }
+
+      },
+  "consumes": {
+    "power": 1
+  },
+    "requirements": [
+      "scrap/100",
+      "lead/50",
+      "graphite/20",
+      "silicon/20"
+    ],
+    "category": "turret"
+  }
