@@ -1,4 +1,4 @@
-![heavy-rain-icon](heavy-rain-icon.png)
+![heavy-rain-icon](icon.png)
 
 # Heavy Rain
 
