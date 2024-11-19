@@ -1,0 +1,97 @@
+
+type: ItemTurret
+health: 1250
+reload: 6.5
+ammoUseEffect: casing3
+range: 250
+inaccuracy: 2
+recoil: 1
+
+shoot: {
+        type: ShootAlternate
+        barrels: 2
+        spread: 4
+        shots: 1
+        }
+
+shootShake: 0.8
+size: 2
+shootCone: 0.08
+shootSound: shootBig
+
+ammoTypes: {
+
+scrap: {
+        type: BasicBulletType
+        speed: 5
+        lifetime: 60
+        damage: 16
+        status: slow
+        statusDuration: 100
+        shootEffect: shootBig
+        knockback: 1
+        height: 13
+        width: 10
+        ammoMultiplier: 4
+        frontColor: e0b28d
+        backColor: 9b928b
+        hitEffect: explosion
+        pierce: false
+        smokeEffect: none
+        }
+plastanium: {
+            type: BasicBulletType
+            inaccuracy: 2
+            speed: 5
+            damage: 8
+            splashDamage: 45
+            splashDamageRadius: 20
+            knockback: 0.8
+            lifetime: 60
+            height: 13
+            width: 10
+            ammoMultiplier: 2
+            frontColor: edf3a9
+            backColor: cbd97f
+            shootEffect: shootBig
+            hitEffect: plasticExplosion
+            pierce: false
+            smokeEffect: none
+            explodeRange: 20
+            fragBullets: 4
+            fragBullet: {
+                         type: FlakBulletType
+                         damage: 12
+                         speed: 1
+                         lifetime: 20
+                         }
+            }
+surge-alloy: {
+              type: BasicBulletType
+              speed: 5
+              damage: 25
+              knockback: 0.8
+              lifetime": 70
+              height: 13
+              width: 10
+              lightning: 4
+              lightningLength: 10
+              lightningDamage: 10
+              frontColor: F3E979FF
+              backColor: ECD36FFF
+              shootEffect: shootBig
+              hitEffect: flakExplosion
+              pierce: false
+              smokeEffect: none
+              }
+        }
+consumes: {
+           power: 1
+           }
+requirements: [
+               scrap/100
+               lead/50
+               graphite/20
+               silicon/20
+               ]
+category: turret
