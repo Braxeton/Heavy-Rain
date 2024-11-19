@@ -1,5 +1,5 @@
-<img src="heavyrain-icon.png" alt="Icon">
+![heavy-rain-icon](heavy-rain-icon.png)
 
-<span style="font-size: 18px;">Heavy Rain</span>
+# Heavy Rain
 
 Not much now :( Will add more content slowly and as I have time.
